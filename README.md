@@ -8,7 +8,7 @@ Email: marcielmanoel15@gmail.com
 ### Making models to another directory
 If you need to create Models to another directory, do this:
 ```ShellScript
-  php artisan make:model Path/to/Directory/Model
+$ php artisan make:model Path/to/Directory/Model
 ```
 This code will create the file Model.php into app/Path/to/Directory. Its namespace will be the same of your directory's path.
 
