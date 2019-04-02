@@ -15,4 +15,6 @@ Apparently, all scripts outside of sections are not executed.
 
 ## Routes
 ### route vs url
-Both generates a full url from a string. **url** needs a parameter which is a local url from the project. route needs a parameter which is the name of the route.
+Both generates a full url from a string. 
+* **url** needs a parameter which is a local url from the project. 
+* **route** needs a parameter which is the name of the route.
