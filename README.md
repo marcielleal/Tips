@@ -1,5 +1,5 @@
 # LaravelTips
-This is a repository to store tips and tricks of Laravel 5.
+This is a repository to store some tips and tricks that I discovered about Laravel 5.
 
 Author: [Marciel Leal](https://github.com/marcielleal)
 
@@ -12,6 +12,18 @@ $ php artisan make:model Path/to/Directory/Model
 ```
 This code will create the file Model.php into app/Path/to/Directory. Its namespace will be the same of your directory's path.
 
+### Changing the User Model from the default namespace
+If you changed the User Model namespace, the authentication only works if you change the configurations of auth. Open config/auth.php file and looks for something like that:
+```php
+'providers' => [
+  'users' => [
+    'driver' => 'eloquent',
+    'model' => App\User::class,
+  ],
+],
+```
+Change the **App\User::class** for **Your\New\Namespace\User::class**
+
 ## Database
 ### Foreign keys on Laravel's migrations
 You **need** to declare the foreign key as an unsigned integer. Nobody seems to know why exactly.
@@ -19,6 +31,7 @@ You **need** to declare the foreign key as an unsigned integer. Nobody seems to 
 ## Views
 ### Scripts
 Apparently, all scripts outside of sections are not executed.
+So, if you need to put different scripts on your pages, you can yield a section for scripts on your parent view and call this section on your child views.
 
 ## Routes
 ### route vs url
