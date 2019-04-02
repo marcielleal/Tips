@@ -2,6 +2,7 @@
 This is a repository to store tips and tricks of Laravel 5.
 
 Author: [Marciel Leal](https://github.com/marcielleal)
+E-mail: marcielmanoel15@gmail.com
 
 ## Database
 ### Foreign keys on Laravel's migrations
