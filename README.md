@@ -33,6 +33,12 @@ You **need** to declare the foreign key as an unsigned integer. Nobody seems to 
 Apparently, all scripts outside of sections are not executed.
 So, if you need to put different scripts on your pages, you can yield a section for scripts on your parent view and call this section on your child views.
 
+### Validation
+Ways to create new rules:
+* Creating a new Rule class (you can do that using make:rule artisan command
+* Declaring a closure in rules array
+* Extending validator on AppProvider
+
 ## Routes
 ### route vs url
 Both generates a full url from a string. 
