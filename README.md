@@ -30,7 +30,7 @@ You **need** to declare the foreign key as an unsigned integer. Nobody seems to 
 
 ### Model
 #### create
-Static method from Model that create and save the model in database
+Static method from Model that create and save the model in database. It instanciates a new model and runs save method, then return model.
 
 #### forceCreate
 Do same as create, but ignores fillable attributes
