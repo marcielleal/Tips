@@ -28,6 +28,13 @@ Change the **App\User::class** for **Your\New\Namespace\User::class**
 ### Foreign keys on Laravel's migrations
 You **need** to declare the foreign key as an unsigned integer. Nobody seems to know why exactly.
 
+### Model
+#### create
+Static method from Model that create and save the model in database
+
+#### forceCreate
+Do same as create, but ignores fillable attributes
+
 ## Views
 ### Scripts
 Apparently, all scripts outside of sections are not executed.
