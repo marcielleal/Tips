@@ -6,7 +6,6 @@ Author: [Marciel Leal](https://github.com/marcielleal)
 Email: marcielmanoel15@gmail.com
 ## App
 ### Making models to another directory
-If you need to create Models to another directory, do this:
 ```ShellScript
 $ php artisan make:model Path/to/Directory/Model
 ```
