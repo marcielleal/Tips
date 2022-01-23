@@ -15,8 +15,8 @@ $ sudo apt install nmap gobuster seclists
 ```
 
 ### nmap
+* -sV -> scan version
+* -sC -> scan scripts *CAUTION:* this acts like an attack
 ```ShellScript
-# -sV -> scan version
-# -sC -> scan scripts *CAUTION:* this acts like an attack
 $ nmap [IP]
 ```
