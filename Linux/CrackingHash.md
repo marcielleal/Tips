@@ -10,5 +10,5 @@ hashid thehash
 hashcat -m 0 -O hash.txt wordlist.txt
 ```
 
-* -m 0 -> means md5
+* -m 0 -> md5 hash
 * -O -> optimization
